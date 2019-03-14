@@ -1,4 +1,4 @@
-package SpringTest;
+package SpringTest.IoCTest;
 
 public interface BeanFactory {
 	String FACTORY_BEAN_PREFIX = "&";
