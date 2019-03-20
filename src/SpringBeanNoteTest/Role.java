@@ -1,9 +1,12 @@
 package SpringBeanNoteTest;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component(value = "role1")
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class Role {
 	
 	@Value("1")
